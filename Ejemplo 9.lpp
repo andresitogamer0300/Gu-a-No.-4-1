@@ -1,0 +1,13 @@
+entero I, k, fac, num
+Inicio
+   para I <- 1 hasta 5 haga
+       escriba "Ingresar un numero "
+       lea num
+       fac <- 1
+       para k <- 1 hasta num haga
+           fac <- fac*k
+       fin para
+       escriba "factorial de ", num, " es ", fac
+       llamar nueva_linea
+   fin para
+fin

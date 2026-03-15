@@ -1,0 +1,11 @@
+Real Suma,Numero
+Inicio
+    suma <- 0
+    Escriba "Ingrese numeros positivos y uno negativo al final: "
+    lea numero
+    mientras numero >= 0 haga
+        suma <- suma + numero
+        lea numero
+    fin mientras
+    escriba "La suma total es: ", suma
+Fin

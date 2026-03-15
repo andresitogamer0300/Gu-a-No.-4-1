@@ -1,0 +1,9 @@
+Entero I, final
+Inicio
+    Escriba "ingresar el numero de veces a repetir el ciclo "
+    lea final
+    para I <- 1 hasta final haga
+        escriba I
+        Llamar nueva_linea
+    fin para
+fin

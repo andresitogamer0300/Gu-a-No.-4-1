@@ -1,0 +1,34 @@
+Caracter Resp
+Cadena [25] nombre
+Real na,ne,nf
+Entero cr,ca
+Inicio
+    cr <- 0
+    ca <- 0
+    Resp <- 'S'
+    Mientras resp <> 'N' haga
+        Escriba "Nombre del alumno: "
+        lea nombre
+        Escriba "Nota acumulada: "
+        lea na
+        Escriba "Nota examen: "
+        lea ne
+        nf <- na + ne
+        si nf >= 60 entonces
+            escriba "Usted esta aprobado: "
+            ca <- ca + 1
+         sino
+            escriba "Usted esta reprobado: "
+            cr <- cr + 1
+    fin si
+         llamar nueva_linea
+         Escriba "Nota final ", nf
+         llamar nueva_linea
+         escriba "Desea continuar S/N"
+         Lea Resp
+    Fin mientras
+    llamar nueva_linea
+    Escriba "Total de reprobados ", cr
+    llamar nueva_linea
+    Escriba "Total de aprobados ", ca
+fin

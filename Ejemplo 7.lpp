@@ -1,0 +1,10 @@
+Entero I, numero, factorial
+Inicio
+    Factorial <- 1
+    escriba "Ingresar el numero para determinar su factorial "
+    lea numero
+    para I <- 1 hasta numero haga
+        Factorial <- factorial * I
+    Fin para
+    escriba " Factorial de ", numero, " es ", factorial
+fin

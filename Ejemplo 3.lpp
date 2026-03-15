@@ -1,0 +1,28 @@
+Caracter Resp
+Cadena [25] nombre
+Real Precio, cantidad, totalglobal, st, isv, tp
+Inicio
+    Totalglobal <- 0
+    Resp <- 'S'
+    Mientras resp <> 'N' haga
+        escriba "Nombre del cliente: "
+        Lea nombre
+        escriba "Ingresar la cantidad del producto: "
+        Lea cantidad
+        escriba "Ingresar el precio de producto: "
+        Lea precio
+        St <- precio * cantidad
+        Isv <- st * 0.012
+        Tp <- st - isv
+        Totalglobal <- totalglobal + st
+        escriba "Subtotal: ", st
+        llamar nueva_linea
+        escriba "Impuesto sobre venta: ", isv
+        llamar nueva_linea
+        escriba "Total a pagar: ", tp
+        llamar nueva_linea
+        escriba "Desea continuar? S/N: "
+        lea Resp
+     Fin mientras
+     escriba "Total de la venta: ", totalglobal
+fin

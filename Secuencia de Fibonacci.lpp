@@ -1,0 +1,18 @@
+Entero n, i, a, b, c
+Inicio
+    Escriba "Secuencia de Fibonacci"
+    Llamar Nueva_Linea
+    Escriba "Ingrese la cantidad de terminos a mostrar: "
+    Lea n
+    a <- 0
+    b <- 1
+    i <- 1  
+    Escriba "Secuencia: "
+    Mientras i <= n Haga
+        Escriba a, " "
+        c <- a + b
+        a <- b
+        b <- c
+        i <- i + 1
+  Fin Mientras
+Fin

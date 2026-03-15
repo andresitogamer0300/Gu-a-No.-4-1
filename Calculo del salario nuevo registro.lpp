@@ -1,0 +1,24 @@
+Real sueldo, descuento, netoPagar
+Cadena [2] respuesta
+inicio
+    respuesta <- "S"
+    mientras (respuesta = "S") o (respuesta = "s") haga
+        llamar nueva_linea
+        escriba "   Registro de Salario   "
+        llamar nueva_linea
+        escriba "Ingrese el sueldo del trabajador: "
+        lea sueldo
+        si sueldo <= 1000000 entonces
+            descuento <- sueldo * 0.03
+        sino
+            descuento <- sueldo * 0.05
+        fin si
+        netopagar <- sueldo - descuento
+        escriba "Descuento aplicado: ", descuento
+        llamar nueva_linea
+        escriba "Neto a pagar: ", netoPagar
+        llamar nueva_linea
+        escriba "Desea ingresar un nuevo trabajador? (S/N): "
+        lea respuesta
+    fin mientras
+fin

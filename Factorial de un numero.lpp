@@ -1,0 +1,16 @@
+Entero numero, resultado, I
+inicio
+    escriba "Ingrese un numero: "
+    lea numero
+    Si numero < 0 Entonces
+        escriba "Incorrecto: El factorial no esta definido para numeros negativos:"
+    sino
+        resultado <- 1
+        I <- 2
+        Mientras I <= numero haga
+            resultado <- resultado * I
+            I <- I + 1
+            Fin mientras
+            escriba "El factorial de ", numero, " es: ", resultado
+        fin si
+fin

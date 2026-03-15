@@ -1,0 +1,26 @@
+Real Adivinar,intento,intentos
+inicio
+    Adivinar <- 50
+    intentos <- 0
+    Escriba "ADIVINA EL NUMERO "
+    llamar nueva_linea
+    Escriba "Coloque un numero de 1 a 100 "
+    llamar nueva_linea
+    intento <- 0
+    Mientras intento <> Adivinar haga
+        llamar nueva_linea
+        escriba "Ingresa tu numero: "
+        lea intento
+        llamar nueva_linea
+        intentos <- intentos + 1
+        si intento < Adivinar Entonces
+            escriba "El numero secreto es mayor"
+        sino
+            si intento > Adivinar Entonces
+            escriba "El numero secreto es menor"
+        sino
+             escriba "CORRECTO Adivino en ", intentos, " intentos "
+        fin si
+    fin si
+  fin mientras
+fin

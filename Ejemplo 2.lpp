@@ -1,0 +1,12 @@
+Entero contador,suma,num
+Inicio
+    Contador <- 0
+    Suma <- 0
+    Mientras contador < 10 haga
+        Escriba "Ingresar un numero: "
+        Lea num
+        Contador <- contador + 1
+        Suma <- Num + suma
+    Fin mientras
+    Escriba "Suma de los 10 numeros ", Suma
+Fin

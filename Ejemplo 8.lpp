@@ -1,0 +1,9 @@
+entero I, k
+Inicio
+    para I <- 1 hasta 4 haga
+        para k <- 1 hasta 5 haga
+            escriba I
+        Fin para
+        llamar nueva_linea
+    fin para
+Fin

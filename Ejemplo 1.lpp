@@ -1,0 +1,10 @@
+Entero contador
+Cadena [25] nombre
+Inicio
+    Contador <- 0
+    Mientras contador < 10 haga
+        Escriba "Ingresar el nombre: "
+        Lea nombre
+        Contador <- contador + 1
+    Fin mientras
+Fin

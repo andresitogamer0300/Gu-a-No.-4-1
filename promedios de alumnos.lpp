@@ -1,0 +1,52 @@
+Entero totalEstudiantes, i, aprobados, reprobados
+Real nota1, nota2, nota3, promedioEstudiante, promedioGrupo, sumaPromedios
+Cadena [20] nombre, grado
+Cadena [2] continuar
+Inicio
+    aprobados <- 0
+    reprobados <- 0
+    sumaPromedios <- 0
+    i <- 0
+    continuar <- "S"
+    
+    mientras (continuar = "S") o (continuar = "S") haga
+        i <- i + 1
+        escriba "   Estudiante No. ", i, "   "
+        llamar nueva_linea
+        escriba "grado: "
+        lea grado
+        escriba "Nombre: "
+        lea nombre
+        escriba "Nota 1: "
+        lea nota1
+        escriba "Nota 2: "
+        lea nota2
+        escriba "Nota 3: "
+        lea nota3
+    promedioEstudiante <- (nota1 + nota2 + nota3) / 3
+    escriba "El promedio de ", nombre, " es: ", promedioEstudiante
+    llamar nueva_linea
+        Si promedioEstudiante >= 3.0 entonces
+            aprobados <- aprobados + 1
+        sino
+            reprobados <- reprobados + 1
+        fin si
+    sumaPromedios <- sumaPromedios + promedioEstudiante
+    escriba "¿Desea ingresar otro estudiante? (S/N): "
+    Lea continuar
+    llamar nueva_linea
+    fin mientras
+    si i > 0 entonces
+    promedioGrupo <- sumaPromedios / i
+    llamar nueva_linea
+    escriba "  Resultados finales   "
+    llamar nueva_linea
+    escriba "Estudiantes aprobados: ", aprobados
+    llamar nueva_linea
+    escriba "Estudiantes reprobados: ", reprobados
+    llamar nueva_linea
+    escriba "Promedio General del grupo: ", promedioGrupo
+  sino
+    escriba "No se ingresaron datos"
+    fin si
+fin
